@@ -1,8 +1,13 @@
 :root {
   --font-family: "IBM Plex Mono", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 
+  --title-color: #db00ff;
   --text-color: #f1b2ce;
   --bg-color: #000028;
+
+  --accent-color: #ff0070;
 
   --page-bg-image: url("../images/cover-image-dark.png");
 }

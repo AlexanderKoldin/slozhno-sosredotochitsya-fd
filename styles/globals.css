@@ -40,3 +40,8 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var();
+}

@@ -8,6 +8,61 @@
   background-attachment: fixed;
 
   min-height: 100dvh;
-  margin: 0;
-  font-family: var(--fontfont-family);
+  margin: 0 auto;
+  font-family: var(--font-family);
+}
+
+.header {
+  height: 100dvh;
+  min-height: 668px;
+
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.header__theme-menu {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  font-weight: var(--font-weight-regular);
+  text-transform: lowercase;
+  padding-inline: 13px;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+/* Текст */
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 0.9;
+}
+
+.header__description {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+
+  line-height: 130%;
+  color: var(--bg-color);
 }
