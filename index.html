@@ -27,9 +27,8 @@
 
   <body class="page">
     <header class="header decorated-zone">
-      <div class="decorated-zone__rec">
+      <div class="decorated-zone__rec" aria-hidden="true">
         <span class="decorated-zone__rec-text">REC</span>
-        <span class="decorated-zone__rec-dot"></span>
       </div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -92,7 +91,7 @@
 
       <section class="section section--what">
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
-        <div class="section__content section__content--columns">
+        <div class="section__content section__content--factors-list">
           <article class="article">
             <h3 class="article__title title-decor">Многозадачность</h3>
             <p class="article__text">
@@ -133,7 +132,7 @@
 
           <div class="section__articles">
             <article class="article">
-              <h4 class="article__title title-decor">Представьте небо и облака</h4>
+              <h4 class="article__title article__title--regular title-decor">Представьте небо и облака</h4>
               <p class="article__text">
                 Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться. Ведь часто именно
                 тревожные мысли о сложных задачах как раз и мешают эти сложные задачи делать. В такие моменты можно
@@ -144,7 +143,7 @@
             </article>
 
             <article class="article">
-              <h4 class="article__title title-decor">Включите музыку</h4>
+              <h4 class="article__title article__title--regular title-decor">Включите музыку</h4>
               <p class="article__text">
                 Но не любую, и не любимую. Любимая может быть связана с сильными положительными эмоциями, которые тоже
                 очень сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить
@@ -153,7 +152,7 @@
             </article>
 
             <article class="article">
-              <h4 class="article__title title-decor">Прогуляйтесь</h4>
+              <h4 class="article__title article__title--regular title-decor">Прогуляйтесь</h4>
               <p class="article__text">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
                 <a
@@ -169,7 +168,7 @@
             </article>
 
             <article class="article">
-              <h4 class="article__title title-decor">Хорошо ешьте</h4>
+              <h4 class="article__title article__title--regular title-decor">Хорошо ешьте</h4>
               <p class="article__text">
                 Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые препятствуют резким скачкам
                 сахара в крови. Например, с высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица,
@@ -178,7 +177,7 @@
             </article>
 
             <article class="article">
-              <h4 class="article__title title-decor">Читайте</h4>
+              <h4 class="article__title article__title--regular title-decor">Читайте</h4>
               <p class="article__text">
                 Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы прочитать пост в соцсети,
                 достаточно нескольких минут или даже секунд. А вот интересная книга способна затянуть и на несколько
@@ -191,54 +190,32 @@
 
       <section class="section section--gallery">
         <h2 class="section__title title-decor">А можно в картинках?</h2>
-        <div class="section__content">
-          <ul class="section__list">
-            <li class="section__item">
-              <article class="article">
-                <div class="article__content">
-                  <img class="article__image" src="./images/sunset.png" alt="Закат с облаками" loading="lazy" />
-                </div>
-              </article>
-            </li>
-            <li class="section__item">
-              <article class="article">
-                <div class="article__content">
-                  <img
-                    class="article__image"
-                    src="./images/ice-cream.png"
-                    alt="Мороженое в вафельном стаканчике"
-                    loading="lazy" />
-                </div>
-              </article>
-            </li>
-            <li class="section__item">
-              <article class="article">
-                <div class="article__content">
-                  <img class="article__image" src="./images/tape.png" alt="Кассетный магнитофон" loading="lazy" />
-                </div>
-              </article>
-            </li>
-            <li class="section__item">
-              <article class="article">
-                <div class="article__content">
-                  <img class="article__image" src="./images/books.png" alt="Стопка книг" loading="lazy" />
-                </div>
-              </article>
-            </li>
-            <li class="section__item">
-              <article class="article">
-                <div class="article__content">
-                  <img class="article__image" src="./images/street.png" alt="Улица с фонарём" loading="lazy" />
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
+        <ul class="section__list">
+          <li class="section__list-item">
+            <img class="section__image" src="./images/sunset.png" alt="Закат с облаками" loading="lazy" />
+          </li>
+          <li class="section__list-item">
+            <img
+              class="section__image"
+              src="./images/ice-cream.png"
+              alt="Мороженое в вафельном стаканчике"
+              loading="lazy" />
+          </li>
+          <li class="section__list-item">
+            <img class="section__image" src="./images/tape.png" alt="Кассетный магнитофон" loading="lazy" />
+          </li>
+          <li class="section__list-item">
+            <img class="section__image" src="./images/books.png" alt="Стопка книг" loading="lazy" />
+          </li>
+          <li class="section__list-item">
+            <img class="section__image" src="./images/street.png" alt="Улица с фонарём" loading="lazy" />
+          </li>
+        </ul>
       </section>
     </main>
 
     <footer class="footer decorated-zone">
-      <h2 class="footer__title page-title">focus</h2>
+      <h2 class="footer__title">focus</h2>
     </footer>
   </body>
 </html>
