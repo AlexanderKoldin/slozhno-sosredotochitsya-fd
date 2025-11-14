@@ -2,18 +2,4 @@
   --font-family: "IBM Plex mono", monospace;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-
-  --title-color: #db00ff;
-  --article-title-color: #000028;
-  --text-color: #f1b2ce;
-
-  --accent-color: #ff0070;
-  --section-title-color: #ff0070;
-
-  --page-bg-image: url("../images/cover-image-dark.png");
-
-  --theme-menu-button-border: #ff0070;
-  --theme-menu-button-hover: rgba(255, 0, 112, 0.4);
-
-  --button-text-color: #ff0070;
 }
