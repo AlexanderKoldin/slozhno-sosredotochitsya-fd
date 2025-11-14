@@ -372,8 +372,23 @@
 }
 
 @media (width >= 1024px) {
+  .decorated-zone__rec {
+    top: 21px;
+  }
+
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 17px;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 23px;
+  }
+
   .header {
     padding-block-start: 16px;
+    margin-block-end: 35px;
   }
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -401,7 +416,7 @@
   }
 
   .section--why {
-    margin-block-end: 14px;
+    margin-block-end: 9px;
   }
 
   .section--what {
