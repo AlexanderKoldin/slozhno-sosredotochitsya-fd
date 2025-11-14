@@ -56,8 +56,8 @@
 }
 
 .header {
-  min-height: 668px;
-  min-height: 100dvh;
+  height: 100dvh;
+  min-height: 668px; /* Исправлено */
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
@@ -88,7 +88,6 @@
   color: var(--button-text-color);
   text-transform: lowercase;
   padding-inline: 12px;
-
   line-height: 1.38;
 }
 
@@ -247,9 +246,8 @@
 .footer {
   display: grid;
   place-items: center;
-  min-height: 668px;
-  min-height: 100dvh;
-
+  height: 100dvh;
+  min-height: 668px; /* Исправлено */
   margin-block-start: 43px;
 }
 
@@ -390,6 +388,7 @@
     padding-block-start: 16px;
     margin-block-end: 35px;
   }
+
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
