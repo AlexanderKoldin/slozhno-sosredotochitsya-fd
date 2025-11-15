@@ -12,7 +12,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-dark):not(.theme-light) {
+  :root:not(.theme-light) {
     --title-color: #db00ff;
     --article-title-color: #000028;
     --text-color: #f1b2ce;
