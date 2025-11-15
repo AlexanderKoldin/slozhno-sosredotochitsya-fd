@@ -189,12 +189,12 @@
   color: var(--text-color, #f1b2ce);
   font-size: 18px;
   line-height: 23.4px;
-  margin: 0;
+  /* margin: 0; */
 }
-
+/*
 .article__text:not(:last-child) {
   margin-block-end: 10px;
-}
+} */
 
 .article__link {
   text-decoration: none;
@@ -214,13 +214,13 @@
   outline: 1px solid currentColor;
 }
 
-.article__image {
+/* .article__image {
   display: block;
   object-fit: cover;
   object-position: center;
   block-size: 100%;
   inline-size: 100%;
-}
+} */
 
 .section--gallery {
   display: flex;
@@ -232,9 +232,9 @@
   color: var(--article-title-color);
 }
 
-.section--gallery .section__list-item {
+/* .section--gallery .section__list-item {
   height: 100%;
-}
+} */
 
 .section--gallery .section__list {
   display: grid;
@@ -270,26 +270,27 @@
 @media (width >= 768px) {
   .decorated-zone::before {
     inset-inline-end: 20px;
-    inset-block-start: 20px;
+    inset-block-start: 17px;
   }
 
   .decorated-zone::after {
     inset-inline-start: 20px;
-    inset-block-end: 20px;
+    inset-block-end: 23px;
   }
 
   .decorated-zone__rec {
-    inset-block-start: 23px;
+    inset-block-start: 20px;
     inset-inline-end: 31px;
   }
 
   .header {
     padding-inline: 0;
-    padding-block-start: 20px;
+    padding-block-start: 16px;
+    padding-block-end: 24px;
+    margin-block-end: 35px;
   }
 
   .header__theme-menu {
-    justify-self: end;
     align-self: center;
     margin-block-start: 0;
     margin-inline-end: 20px;
@@ -330,11 +331,11 @@
   .section--what {
     grid-template-columns: 1fr;
     margin-inline-end: 11px;
+    gap: 20px; /* его если убрать, все слетит - ОСТАВИТЬ */
   }
 
   .section--what .section__title {
     width: clamp(150px, 16%, 237px);
-    /* margin-block-end: 20px; */
   }
 
   .section__content--factors-list {
@@ -347,6 +348,7 @@
 
   .section--gallery {
     margin-inline: 10px;
+    gap: 20px;
   }
 
   .section--gallery .section__list {
@@ -433,8 +435,6 @@
 
   .section__content--factors-list {
     grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-    margin-block-end: 48px;
   }
 
   .section--how .section__title {
