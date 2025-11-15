@@ -59,9 +59,10 @@
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
 
-  padding-block-end: 30px;
+  padding-block-end: 25px;
+  /* padding-block-end: 30px;  */
   padding-inline: 10px;
-  position: relative;
+
   margin-block-start: 3px;
   margin-block-end: 17px;
 }
