@@ -189,12 +189,7 @@
   color: var(--text-color, #f1b2ce);
   font-size: 18px;
   line-height: 23.4px;
-  /* margin: 0; */
 }
-/*
-.article__text:not(:last-child) {
-  margin-block-end: 10px;
-} */
 
 .article__link {
   text-decoration: none;
@@ -214,14 +209,6 @@
   outline: 1px solid currentColor;
 }
 
-/* .article__image {
-  display: block;
-  object-fit: cover;
-  object-position: center;
-  block-size: 100%;
-  inline-size: 100%;
-} */
-
 .section--gallery {
   display: flex;
   flex-direction: column;
@@ -231,10 +218,6 @@
 .section--gallery .section__title {
   color: var(--article-title-color);
 }
-
-/* .section--gallery .section__list-item {
-  height: 100%;
-} */
 
 .section--gallery .section__list {
   display: grid;
@@ -331,7 +314,7 @@
   .section--what {
     grid-template-columns: 1fr;
     margin-inline-end: 11px;
-    gap: 20px; /* его если убрать, все слетит - ОСТАВИТЬ */
+    gap: 20px;
   }
 
   .section--what .section__title {
