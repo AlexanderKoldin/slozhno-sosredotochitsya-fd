@@ -27,7 +27,7 @@
   border-inline-start: 1px solid var(--theme-menu-button-border);
   border-block-end: 1px solid var(--theme-menu-button-border);
   inset-inline-start: 10px;
-  inset-block-end: 33px;
+  inset-block-end: 13px;
 }
 
 .decorated-zone__rec {
@@ -59,12 +59,11 @@
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
 
-  padding-block-end: 25px;
-  /* padding-block-end: 30px;  */
+  padding-block-end: 11px;
   padding-inline: 10px;
 
   margin-block-start: 3px;
-  margin-block-end: 17px;
+  margin-block-end: 37px;
 }
 
 .header__theme-menu {
@@ -266,7 +265,6 @@
   color: var(--title-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 84.5%;
-  margin-block-end: 25px;
 }
 
 @media (width >= 768px) {
